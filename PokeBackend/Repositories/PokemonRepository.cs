@@ -50,5 +50,21 @@ namespace PokeBackend.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task AddTeamAsync(Team team)
+        {
+            await _context.Teams.AddAsync(team);
+        }
+
+        public async Task AddTeamMemberAsync(TeamMember member)
+        {
+            await _context.TeamMembers.AddAsync(member);
+        }
+
+        public async Task AddTeamMemberMoveAsync(TeamMemberMove memberMove)
+        {
+            await _context.AddAsync(memberMove);
+        }
+
     }
 }

@@ -14,5 +14,10 @@ namespace PokeBackend.Interfaces
         Task AddPokemonAsync(Pokemon pokemon);
         Task AddMoveAsync(Move move);
         Task SaveAsync();
+
+
+        Task AddTeamAsync(Team team);
+        Task AddTeamMemberAsync(TeamMember member);
+        Task AddTeamMemberMoveAsync(TeamMemberMove memberMove);
     }
 }

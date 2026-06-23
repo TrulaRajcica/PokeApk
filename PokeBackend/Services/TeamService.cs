@@ -2,20 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PokeBackend.Data;
 using PokeBackend.Models;
 using PokeBackend.DTOs;
-using Microsoft.EntityFrameworkCore;
+using PokeBackend.Interfaces;
 
 namespace PokeBackend.Services
 {
     public class TeamService
     {
-        private readonly DataContext _context;
+        private readonly IPokemonRepository _pokemonRepo;
 
-        public TeamService(DataContext context)
+        public TeamService(IPokemonRepository pokemonRepo)
         {
-            _context = context;
+            _pokemonRepo = pokemonRepo;
         }
 
         public bool IsTeamSizeValid(int memberCount)
@@ -35,8 +34,8 @@ namespace PokeBackend.Services
                 CreatedAt = DateTime.Now
             };
 
-            _context.Teams.Add(newTeam);
-            await _context.SaveChangesAsync();
+            await _pokemonRepo.AddTeamAsync(newTeam);
+            await _pokemonRepo.SaveAsync();
 
             foreach (var memberDto in request.Members)
             {
@@ -46,8 +45,9 @@ namespace PokeBackend.Services
                     PokemonId = memberDto.PokemonId
                 };
 
-                _context.TeamMembers.Add(teamMember);
-                await _context.SaveChangesAsync();
+                await _pokemonRepo.AddTeamMemberAsync(teamMember);
+                await _pokemonRepo.SaveAsync();
+
                 foreach (var moveId in memberDto.MoveIds)
                 {
                     var memberMove = new TeamMemberMove
@@ -55,11 +55,11 @@ namespace PokeBackend.Services
                         TeamMemberId = teamMember.Id,
                         MoveId = moveId
                     };
-                    _context.Add(memberMove);
+                    await _pokemonRepo.AddTeamMemberMoveAsync(memberMove);
                 }
             }
 
-            await _context.SaveChangesAsync();
+            await _pokemonRepo.SaveAsync();
             return true;
         }
     }
