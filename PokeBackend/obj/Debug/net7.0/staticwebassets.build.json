@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wgvmb7xYhOVpHfX/e4WJlDVf2misX4JiiF80jHGIMHw=",
+  "Source": "PokeBackend",
+  "BasePath": "_content/PokeBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

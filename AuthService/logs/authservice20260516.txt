@@ -1,0 +1,278 @@
+2026-05-16 14:39:16.840 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 14:39:16.878 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-16 14:39:16.878 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 14:39:16.879 +02:00 [INF] Hosting environment: Development
+2026-05-16 14:39:16.879 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-16 14:41:47.326 +02:00 [INF] Application is shutting down...
+2026-05-16 14:41:57.296 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 14:41:57.330 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-16 14:41:57.331 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 14:41:57.331 +02:00 [INF] Hosting environment: Development
+2026-05-16 14:41:57.331 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-16 14:42:24.833 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger - -
+2026-05-16 14:42:24.850 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger - - - 301 0 - 18.7791ms
+2026-05-16 14:42:24.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-16 14:42:24.881 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 25.8332ms
+2026-05-16 14:42:24.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui.css - -
+2026-05-16 14:42:24.887 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui-bundle.js - -
+2026-05-16 14:42:24.887 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui-standalone-preset.js - -
+2026-05-16 14:42:24.893 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-16 14:42:24.893 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-16 14:42:24.893 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-16 14:42:24.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui.css - - - 200 144929 text/css 7.1634ms
+2026-05-16 14:42:24.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 5.9505ms
+2026-05-16 14:42:24.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 6.3420ms
+2026-05-16 14:42:24.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-16 14:42:24.963 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/favicon-32x32.png - -
+2026-05-16 14:42:24.964 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-16 14:42:24.964 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/favicon-16x16.png - -
+2026-05-16 14:42:24.964 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/favicon-32x32.png - - - 200 628 image/png 0.3285ms
+2026-05-16 14:42:24.964 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2026-05-16 14:42:24.964 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/favicon-16x16.png - - - 200 665 image/png 0.4866ms
+2026-05-16 14:42:24.994 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 31.7850ms
+2026-05-16 14:43:21.982 +02:00 [INF] Application is shutting down...
+2026-05-16 14:59:32.213 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 14:59:32.247 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-16 14:59:32.248 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 14:59:32.248 +02:00 [INF] Hosting environment: Development
+2026-05-16 14:59:32.248 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-16 14:59:36.780 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-16 14:59:36.820 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 40.9217ms
+2026-05-16 14:59:36.885 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-16 14:59:36.918 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 33.3062ms
+2026-05-16 14:59:42.863 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-16 14:59:42.867 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 4.0280ms
+2026-05-16 14:59:42.897 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-16 14:59:42.899 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.2997ms
+2026-05-16 15:00:04.260 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5178/api/Auth/register application/json 78
+2026-05-16 15:00:04.265 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 15:00:04.278 +02:00 [ERR] HTTP POST /api/Auth/register responded 500 in 14.3733 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-16 15:00:04.287 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-16 15:00:04.289 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5178/api/Auth/register application/json 78 - 500 - text/plain;+charset=utf-8 29.3550ms
+2026-05-16 15:01:50.865 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/users - -
+2026-05-16 15:01:50.869 +02:00 [ERR] HTTP GET /api/Admin/users responded 500 in 1.1539 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-16 15:01:50.870 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-16 15:01:50.872 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/users - - - 500 - text/plain;+charset=utf-8 6.2282ms
+2026-05-16 15:01:58.846 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-16 15:01:58.850 +02:00 [ERR] HTTP GET /api/Admin/stats responded 500 in 3.1203 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-16 15:01:58.852 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService/Program.cs:line 62
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-16 15:01:58.853 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 500 - text/plain;+charset=utf-8 6.6518ms
+2026-05-16 15:03:52.912 +02:00 [INF] Application is shutting down...
+2026-05-16 15:05:31.813 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='pokemon_db' AND TABLE_NAME='__EFMigrationsHistory';
+2026-05-16 15:05:31.833 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='pokemon_db' AND TABLE_NAME='__EFMigrationsHistory';
+2026-05-16 15:05:31.842 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-05-16 15:05:31.846 +02:00 [INF] Applying migration '20260516130525_InitialCreate'.
+2026-05-16 15:05:31.859 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2026-05-16 15:05:31.862 +02:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Role` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `CreatedAt` datetime(6) NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2026-05-16 15:06:48.379 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 15:06:48.426 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-16 15:06:48.427 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 15:06:48.427 +02:00 [INF] Hosting environment: Development
+2026-05-16 15:06:48.427 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-16 15:06:53.839 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-16 15:06:53.877 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 39.6920ms
+2026-05-16 15:06:53.916 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-16 15:06:53.950 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 34.0997ms
+2026-05-16 15:07:19.421 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/users - -
+2026-05-16 15:07:19.427 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 15:07:19.490 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AdminController.GetAllUsers (AuthService)'
+2026-05-16 15:07:19.495 +02:00 [INF] Route matched with {action = "GetAllUsers", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers() on controller AuthService.Controllers.AdminController (AuthService).
+2026-05-16 15:07:19.697 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Username`, `u`.`Email`, `u`.`Role`
+FROM `Users` AS `u`
+2026-05-16 15:07:19.704 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType0`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AuthService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-16 15:07:19.706 +02:00 [INF] Executed action AuthService.Controllers.AdminController.GetAllUsers (AuthService) in 210.9197ms
+2026-05-16 15:07:19.707 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AdminController.GetAllUsers (AuthService)'
+2026-05-16 15:07:19.707 +02:00 [INF] HTTP GET /api/Admin/users responded 200 in 282.1516 ms
+2026-05-16 15:07:19.709 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/users - - - 200 - application/json;+charset=utf-8 287.9000ms
+2026-05-16 15:07:25.327 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-16 15:07:25.332 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:07:25.335 +02:00 [INF] Route matched with {action = "GetSystemStats", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSystemStats() on controller AuthService.Controllers.AdminController (AuthService).
+2026-05-16 15:07:25.367 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Users` AS `u`
+2026-05-16 15:07:25.368 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-16 15:07:25.368 +02:00 [INF] Executed action AuthService.Controllers.AdminController.GetSystemStats (AuthService) in 33.4123ms
+2026-05-16 15:07:25.369 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:07:25.369 +02:00 [INF] HTTP GET /api/Admin/stats responded 200 in 39.3145 ms
+2026-05-16 15:07:25.369 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 200 - application/json;+charset=utf-8 41.9582ms
+2026-05-16 15:08:05.387 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5178/api/Auth/register application/json 80
+2026-05-16 15:08:05.390 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AuthController.Register (AuthService)'
+2026-05-16 15:08:05.398 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(AuthService.DTOs.UserRegisterDto) on controller AuthService.Controllers.AuthController (AuthService).
+2026-05-16 15:08:05.468 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Email` = @__email_0
+LIMIT 1
+2026-05-16 15:08:05.670 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`CreatedAt`, `Email`, `PasswordHash`, `Role`, `Username`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-05-16 15:08:05.677 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 15:08:05.678 +02:00 [INF] Executed action AuthService.Controllers.AuthController.Register (AuthService) in 279.6479ms
+2026-05-16 15:08:05.678 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AuthController.Register (AuthService)'
+2026-05-16 15:08:05.678 +02:00 [INF] HTTP POST /api/Auth/register responded 200 in 290.5149 ms
+2026-05-16 15:08:05.678 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5178/api/Auth/register application/json 80 - 200 - text/plain;+charset=utf-8 291.0938ms
+2026-05-16 15:08:20.744 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5178/api/Auth/login application/json 58
+2026-05-16 15:08:20.746 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AuthController.Login (AuthService)'
+2026-05-16 15:08:20.750 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthService.DTOs.UserLoginDto) on controller AuthService.Controllers.AuthController (AuthService).
+2026-05-16 15:08:20.760 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Email` = @__email_0
+LIMIT 1
+2026-05-16 15:08:20.887 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-16 15:08:20.888 +02:00 [INF] Executed action AuthService.Controllers.AuthController.Login (AuthService) in 137.5239ms
+2026-05-16 15:08:20.888 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AuthController.Login (AuthService)'
+2026-05-16 15:08:20.888 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 142.4007 ms
+2026-05-16 15:08:20.888 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5178/api/Auth/login application/json 58 - 200 - application/json;+charset=utf-8 144.3347ms
+2026-05-16 15:10:11.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-16 15:10:11.697 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:10:11.697 +02:00 [INF] Route matched with {action = "GetSystemStats", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSystemStats() on controller AuthService.Controllers.AdminController (AuthService).
+2026-05-16 15:10:11.700 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Users` AS `u`
+2026-05-16 15:10:11.701 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-16 15:10:11.701 +02:00 [INF] Executed action AuthService.Controllers.AdminController.GetSystemStats (AuthService) in 3.9667ms
+2026-05-16 15:10:11.702 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:10:11.702 +02:00 [INF] HTTP GET /api/Admin/stats responded 200 in 6.4836 ms
+2026-05-16 15:10:11.702 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 200 - application/json;+charset=utf-8 7.8375ms
+2026-05-16 15:11:24.831 +02:00 [INF] Application is shutting down...
+2026-05-16 15:16:00.165 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 15:16:00.203 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-16 15:16:00.203 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 15:16:00.203 +02:00 [INF] Hosting environment: Development
+2026-05-16 15:16:00.203 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-16 15:16:08.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-16 15:16:08.865 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 40.4211ms
+2026-05-16 15:16:08.895 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-16 15:16:08.927 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 31.7662ms
+2026-05-16 15:16:12.803 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-16 15:16:12.810 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 15:16:12.830 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-16 15:16:12.832 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-16 15:16:12.833 +02:00 [INF] HTTP GET /api/Admin/stats responded 401 in 24.9401 ms
+2026-05-16 15:16:12.834 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 401 0 - 30.5048ms
+2026-05-16 15:16:32.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-16 15:16:32.899 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:16:32.904 +02:00 [INF] Route matched with {action = "GetSystemStats", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSystemStats() on controller AuthService.Controllers.AdminController (AuthService).
+2026-05-16 15:16:33.120 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Users` AS `u`
+2026-05-16 15:16:33.499 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-16 15:16:33.501 +02:00 [INF] Executed action AuthService.Controllers.AdminController.GetSystemStats (AuthService) in 595.9349ms
+2026-05-16 15:16:33.501 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-16 15:16:33.501 +02:00 [INF] HTTP GET /api/Admin/stats responded 200 in 662.3375 ms
+2026-05-16 15:16:33.503 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 200 - application/json;+charset=utf-8 666.4813ms
+2026-05-16 15:16:49.026 +02:00 [INF] Application is shutting down...

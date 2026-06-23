@@ -1,0 +1,17 @@
+2026-06-23 11:54:51.393 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-06-23 11:54:51.434 +02:00 [INF] Now listening on: http://localhost:5033
+2026-06-23 11:54:51.435 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-23 11:54:51.435 +02:00 [INF] Hosting environment: Development
+2026-06-23 11:54:51.435 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/PokemonApk/PokeBackend
+2026-06-23 11:54:53.861 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/ - -
+2026-06-23 11:54:53.874 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-06-23 11:54:53.887 +02:00 [INF] HTTP GET / responded 404 in 13.6394 ms
+2026-06-23 11:54:53.891 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/ - - - 404 0 - 31.0990ms
+2026-06-23 11:54:59.356 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-06-23 11:54:59.407 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 51.1322ms
+2026-06-23 11:54:59.475 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-06-23 11:54:59.507 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 31.5768ms
+2026-06-23 11:55:53.967 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-06-23 11:55:53.968 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 1.4847ms
+2026-06-23 11:55:54.034 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-06-23 11:55:54.038 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.7236ms

@@ -1,0 +1,213 @@
+2026-05-16 14:39:27.139 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 14:39:27.177 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-16 14:39:27.177 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 14:39:27.177 +02:00 [INF] Hosting environment: Development
+2026-05-16 14:39:27.177 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-16 14:40:24.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger - -
+2026-05-16 14:40:24.271 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger - - - 301 0 - 18.1246ms
+2026-05-16 14:40:24.275 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-05-16 14:40:24.313 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 37.9265ms
+2026-05-16 14:40:24.379 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-05-16 14:40:24.386 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/apple-touch-icon-precomposed.png - -
+2026-05-16 14:40:24.388 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 14:40:24.401 +02:00 [INF] HTTP GET /apple-touch-icon-precomposed.png responded 404 in 14.3288 ms
+2026-05-16 14:40:24.403 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/apple-touch-icon-precomposed.png - - - 404 0 - 16.9074ms
+2026-05-16 14:40:24.403 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/apple-touch-icon.png - -
+2026-05-16 14:40:24.404 +02:00 [INF] HTTP GET /apple-touch-icon.png responded 404 in 0.5424 ms
+2026-05-16 14:40:24.404 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/apple-touch-icon.png - - - 404 0 - 0.8341ms
+2026-05-16 14:40:24.404 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - -
+2026-05-16 14:40:24.407 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-16 14:40:24.407 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - - - 200 628 image/png 2.9350ms
+2026-05-16 14:40:24.414 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.5275ms
+2026-05-16 14:43:26.154 +02:00 [INF] Application is shutting down...
+2026-05-16 14:55:13.424 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 14:55:13.466 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-16 14:55:13.467 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 14:55:13.467 +02:00 [INF] Hosting environment: Development
+2026-05-16 14:55:13.467 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-16 14:55:17.181 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-05-16 14:55:17.233 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 53.3941ms
+2026-05-16 14:55:17.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-05-16 14:55:17.357 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.2874ms
+2026-05-16 14:56:17.262 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Review application/json 61
+2026-05-16 14:56:17.269 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 14:56:17.310 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:56:17.320 +02:00 [INF] Route matched with {action = "CreateReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReview(PokeBackend.DTOs.ReviewRequestDto) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:56:17.637 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Reviews` (`Comment`, `PokemonId`, `Rating`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Reviews`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-05-16 14:56:17.652 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 14:56:17.653 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend) in 332.0293ms
+2026-05-16 14:56:17.653 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:56:17.654 +02:00 [INF] HTTP POST /api/Review responded 200 in 387.6803 ms
+2026-05-16 14:56:17.656 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Review application/json 61 - 200 - text/plain;+charset=utf-8 394.4535ms
+2026-05-16 14:56:28.006 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/3 - -
+2026-05-16 14:56:28.009 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-05-16 14:56:28.015 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:56:28.114 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-05-16 14:56:28.115 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-16 14:56:28.119 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 103.3754ms
+2026-05-16 14:56:28.119 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-05-16 14:56:28.119 +02:00 [INF] HTTP GET /api/Review/pokemon/3 responded 200 in 111.2213 ms
+2026-05-16 14:56:28.119 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/3 - - - 200 - application/json;+charset=utf-8 113.0890ms
+2026-05-16 14:56:33.512 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/2 - -
+2026-05-16 14:56:33.516 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-05-16 14:56:33.516 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:56:33.531 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-05-16 14:56:33.532 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-16 14:56:33.533 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 15.9179ms
+2026-05-16 14:56:33.533 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-05-16 14:56:33.533 +02:00 [INF] HTTP GET /api/Review/pokemon/2 responded 200 in 19.2752 ms
+2026-05-16 14:56:33.533 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/2 - - - 200 - application/json;+charset=utf-8 20.6903ms
+2026-05-16 14:56:46.528 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5033/api/Review/1 - 0
+2026-05-16 14:56:46.530 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend)'
+2026-05-16 14:56:46.533 +02:00 [INF] Route matched with {action = "DeleteReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteReview(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:56:46.550 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`PokemonId`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE (`r`.`Id` = @__id_0) AND (`r`.`UserId` = @__userId_1)
+LIMIT 1
+2026-05-16 14:56:46.551 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-05-16 14:56:46.551 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend) in 17.7342ms
+2026-05-16 14:56:46.551 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend)'
+2026-05-16 14:56:46.551 +02:00 [INF] HTTP DELETE /api/Review/1 responded 404 in 22.5995 ms
+2026-05-16 14:56:46.551 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5033/api/Review/1 - 0 - 404 - text/plain;+charset=utf-8 23.0552ms
+2026-05-16 14:57:16.704 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5033/api/Review/2 - 0
+2026-05-16 14:57:16.707 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend)'
+2026-05-16 14:57:16.707 +02:00 [INF] Route matched with {action = "DeleteReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteReview(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:57:16.710 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`PokemonId`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE (`r`.`Id` = @__id_0) AND (`r`.`UserId` = @__userId_1)
+LIMIT 1
+2026-05-16 14:57:16.720 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Reviews`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2026-05-16 14:57:16.722 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 14:57:16.722 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend) in 15.1547ms
+2026-05-16 14:57:16.723 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.DeleteReview (PokeBackend)'
+2026-05-16 14:57:16.723 +02:00 [INF] HTTP DELETE /api/Review/2 responded 200 in 18.0419 ms
+2026-05-16 14:57:16.723 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5033/api/Review/2 - 0 - 200 - text/plain;+charset=utf-8 19.0312ms
+2026-05-16 14:57:29.065 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/4 - 0
+2026-05-16 14:57:29.067 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend)'
+2026-05-16 14:57:29.069 +02:00 [INF] Route matched with {action = "AdminDeleteReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminDeleteReview(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:57:29.084 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`PokemonId`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`Id` = @__p_0
+LIMIT 1
+2026-05-16 14:57:29.086 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Reviews`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2026-05-16 14:57:29.086 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 14:57:29.086 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend) in 16.7638ms
+2026-05-16 14:57:29.086 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend)'
+2026-05-16 14:57:29.086 +02:00 [INF] HTTP DELETE /api/Review/admin/4 responded 200 in 20.9291 ms
+2026-05-16 14:57:29.087 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/4 - 0 - 200 - text/plain;+charset=utf-8 21.3706ms
+2026-05-16 14:57:45.965 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Review application/json 61
+2026-05-16 14:57:45.966 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:57:45.966 +02:00 [INF] Route matched with {action = "CreateReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReview(PokeBackend.DTOs.ReviewRequestDto) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:57:45.973 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Reviews` (`Comment`, `PokemonId`, `Rating`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Reviews`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-05-16 14:57:45.974 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 14:57:45.975 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend) in 8.5562ms
+2026-05-16 14:57:45.975 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:57:45.975 +02:00 [INF] HTTP POST /api/Review responded 200 in 9.3824 ms
+2026-05-16 14:57:45.975 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Review application/json 61 - 200 - text/plain;+charset=utf-8 10.5862ms
+2026-05-16 14:57:52.828 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Review application/json 67
+2026-05-16 14:57:52.829 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:57:52.829 +02:00 [INF] Route matched with {action = "CreateReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReview(PokeBackend.DTOs.ReviewRequestDto) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 14:57:52.834 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Reviews` (`Comment`, `PokemonId`, `Rating`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Reviews`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-05-16 14:57:52.835 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 14:57:52.835 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend) in 5.4901ms
+2026-05-16 14:57:52.835 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.CreateReview (PokeBackend)'
+2026-05-16 14:57:52.835 +02:00 [INF] HTTP POST /api/Review responded 200 in 6.5910 ms
+2026-05-16 14:57:52.836 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Review application/json 67 - 200 - text/plain;+charset=utf-8 7.2133ms
+2026-05-16 15:03:47.780 +02:00 [INF] Application is shutting down...
+2026-05-16 15:09:02.677 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 15:09:02.715 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-16 15:09:02.716 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 15:09:02.716 +02:00 [INF] Hosting environment: Development
+2026-05-16 15:09:02.716 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-16 15:09:05.098 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-05-16 15:09:05.148 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 51.3703ms
+2026-05-16 15:09:05.236 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-05-16 15:09:05.272 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 36.6006ms
+2026-05-16 15:09:41.184 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/5 - 0
+2026-05-16 15:09:41.190 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 15:09:41.228 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-16 15:09:41.229 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-16 15:09:41.230 +02:00 [INF] HTTP DELETE /api/Review/admin/5 responded 403 in 41.8243 ms
+2026-05-16 15:09:41.231 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/5 - 0 - 403 0 - 47.4881ms
+2026-05-16 15:10:04.509 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/5 - 0
+2026-05-16 15:10:04.516 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend)'
+2026-05-16 15:10:04.533 +02:00 [INF] Route matched with {action = "AdminDeleteReview", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminDeleteReview(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-05-16 15:10:04.844 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`PokemonId`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`Id` = @__p_0
+LIMIT 1
+2026-05-16 15:10:04.881 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Reviews`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2026-05-16 15:10:04.886 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-16 15:10:04.887 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend) in 353.4432ms
+2026-05-16 15:10:04.887 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.AdminDeleteReview (PokeBackend)'
+2026-05-16 15:10:04.887 +02:00 [INF] HTTP DELETE /api/Review/admin/5 responded 200 in 376.3962 ms
+2026-05-16 15:10:04.889 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5033/api/Review/admin/5 - 0 - 200 - text/plain;+charset=utf-8 380.7019ms
+2026-05-16 15:11:21.003 +02:00 [INF] Application is shutting down...
+2026-05-16 15:16:05.683 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-16 15:16:05.723 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-16 15:16:05.724 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-16 15:16:05.724 +02:00 [INF] Hosting environment: Development
+2026-05-16 15:16:05.724 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-16 15:16:33.146 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/stats - -
+2026-05-16 15:16:33.158 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-16 15:16:33.169 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-05-16 15:16:33.174 +02:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStats() on controller PokeBackend.Controllers.StatsController (PokeBackend).
+2026-05-16 15:16:33.456 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Teams` AS `t`
+2026-05-16 15:16:33.465 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Reviews` AS `r`
+2026-05-16 15:16:33.467 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Pokemons` AS `p`
+2026-05-16 15:16:33.468 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Moves` AS `m`
+2026-05-16 15:16:33.469 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Items` AS `i`
+2026-05-16 15:16:33.471 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-16 15:16:33.490 +02:00 [INF] Executed action PokeBackend.Controllers.StatsController.GetStats (PokeBackend) in 315.37ms
+2026-05-16 15:16:33.491 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-05-16 15:16:33.492 +02:00 [INF] HTTP GET /api/stats responded 200 in 333.7338 ms
+2026-05-16 15:16:33.494 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/stats - - - 200 - application/json;+charset=utf-8 348.9693ms
+2026-05-16 15:16:45.527 +02:00 [INF] Application is shutting down...

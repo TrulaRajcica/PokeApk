@@ -1,0 +1,10 @@
+2026-05-21 18:31:41.366 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 18:31:41.401 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-21 18:31:41.402 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 18:31:41.402 +02:00 [INF] Hosting environment: Development
+2026-05-21 18:31:41.402 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-21 19:59:52.417 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-21 19:59:52.454 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-21 19:59:52.455 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-21 19:59:52.455 +02:00 [INF] Hosting environment: Development
+2026-05-21 19:59:52.455 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService

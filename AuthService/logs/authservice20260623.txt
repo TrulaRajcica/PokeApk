@@ -1,0 +1,9 @@
+2026-06-23 11:54:45.787 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-06-23 11:54:45.823 +02:00 [INF] Now listening on: http://localhost:5178
+2026-06-23 11:54:45.824 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-23 11:54:45.824 +02:00 [INF] Hosting environment: Development
+2026-06-23 11:54:45.824 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/PokemonApk/AuthService
+2026-06-23 11:55:57.707 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-06-23 11:55:57.748 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 42.6104ms
+2026-06-23 11:55:57.781 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-06-23 11:55:57.814 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 32.9408ms

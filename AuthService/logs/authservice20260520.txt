@@ -1,0 +1,22 @@
+2026-05-20 18:24:15.097 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-20 18:24:15.134 +02:00 [INF] Now listening on: http://localhost:5178
+2026-05-20 18:24:15.135 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 18:24:15.135 +02:00 [INF] Hosting environment: Development
+2026-05-20 18:24:15.135 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/AuthService
+2026-05-20 18:24:40.008 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/index.html - -
+2026-05-20 18:24:40.050 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/index.html - - - 200 - text/html;charset=utf-8 42.8460ms
+2026-05-20 18:24:40.079 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - -
+2026-05-20 18:24:40.112 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 33.1339ms
+2026-05-20 18:24:56.820 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5178/api/Admin/stats - -
+2026-05-20 18:24:56.827 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-20 18:24:56.897 +02:00 [INF] Executing endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-20 18:24:56.902 +02:00 [INF] Route matched with {action = "GetSystemStats", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSystemStats() on controller AuthService.Controllers.AdminController (AuthService).
+2026-05-20 18:24:57.151 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Users` AS `u`
+2026-05-20 18:24:57.482 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 18:24:57.484 +02:00 [INF] Executed action AuthService.Controllers.AdminController.GetSystemStats (AuthService) in 580.5911ms
+2026-05-20 18:24:57.484 +02:00 [INF] Executed endpoint 'AuthService.Controllers.AdminController.GetSystemStats (AuthService)'
+2026-05-20 18:24:57.485 +02:00 [INF] HTTP GET /api/Admin/stats responded 200 in 659.8182 ms
+2026-05-20 18:24:57.487 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5178/api/Admin/stats - - - 200 - application/json;+charset=utf-8 667.8329ms
+2026-05-20 18:29:24.634 +02:00 [INF] Application is shutting down...

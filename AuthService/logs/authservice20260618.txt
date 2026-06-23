@@ -1,0 +1,5 @@
+2026-06-18 08:27:59.530 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-06-18 08:27:59.568 +02:00 [INF] Now listening on: http://localhost:5178
+2026-06-18 08:27:59.569 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-18 08:27:59.569 +02:00 [INF] Hosting environment: Development
+2026-06-18 08:27:59.569 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/PokemonApk/AuthService

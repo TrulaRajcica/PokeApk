@@ -1,0 +1,68 @@
+2026-05-10 19:18:01.283 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-10 19:18:01.323 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-10 19:18:01.324 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-10 19:18:01.324 +02:00 [INF] Hosting environment: Development
+2026-05-10 19:18:01.324 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-10 19:19:04.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-05-10 19:19:04.486 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 54.0284ms
+2026-05-10 19:19:04.966 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-05-10 19:19:05.019 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.4532ms
+2026-05-10 19:19:17.153 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Admin/users - -
+2026-05-10 19:19:17.158 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-05-10 19:19:17.202 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.AdminController.GetAllUsers (PokeBackend)'
+2026-05-10 19:19:17.210 +02:00 [INF] Route matched with {action = "GetAllUsers", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers() on controller PokeBackend.Controllers.AdminController (PokeBackend).
+2026-05-10 19:19:17.478 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Username`, `u`.`Email`, `u`.`Role`
+FROM `Users` AS `u`
+2026-05-10 19:19:17.487 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType0`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-10 19:19:17.492 +02:00 [INF] Executed action PokeBackend.Controllers.AdminController.GetAllUsers (PokeBackend) in 281.5095ms
+2026-05-10 19:19:17.492 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.AdminController.GetAllUsers (PokeBackend)'
+2026-05-10 19:19:17.493 +02:00 [INF] HTTP GET /api/Admin/users responded 200 in 337.3606 ms
+2026-05-10 19:19:17.495 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Admin/users - - - 200 - application/json;+charset=utf-8 342.9475ms
+2026-05-10 19:19:29.428 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/3 - 0
+2026-05-10 19:19:29.433 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-05-10 19:19:29.442 +02:00 [INF] Route matched with {action = "AnalyzeSavedTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeSavedTeam(Int32) on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-05-10 19:19:29.507 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-05-10 19:19:29.536 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__teamId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`CreatedAt`, `t0`.`Name`, `t0`.`UserId`, `t2`.`Id`, `t2`.`PokemonId`, `t2`.`TeamId`, `t2`.`Id0`, `t2`.`MoveId`, `t2`.`TeamMemberId`, `t2`.`Id00`, `t2`.`Accuracy`, `t2`.`Name`, `t2`.`PP`, `t2`.`Power`, `t2`.`TypeName`
+FROM (
+    SELECT `t`.`Id`, `t`.`CreatedAt`, `t`.`Name`, `t`.`UserId`
+    FROM `Teams` AS `t`
+    WHERE (`t`.`Id` = @__teamId_0) AND (`t`.`UserId` = @__userId_1)
+    LIMIT 1
+) AS `t0`
+LEFT JOIN (
+    SELECT `t1`.`Id`, `t1`.`PokemonId`, `t1`.`TeamId`, `t3`.`Id` AS `Id0`, `t3`.`MoveId`, `t3`.`TeamMemberId`, `t3`.`Id0` AS `Id00`, `t3`.`Accuracy`, `t3`.`Name`, `t3`.`PP`, `t3`.`Power`, `t3`.`TypeName`
+    FROM `TeamMembers` AS `t1`
+    LEFT JOIN (
+        SELECT `t4`.`Id`, `t4`.`MoveId`, `t4`.`TeamMemberId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+        FROM `TeamMemberMoves` AS `t4`
+        INNER JOIN `Moves` AS `m` ON `t4`.`MoveId` = `m`.`Id`
+    ) AS `t3` ON `t1`.`Id` = `t3`.`TeamMemberId`
+) AS `t2` ON `t0`.`Id` = `t2`.`TeamId`
+ORDER BY `t0`.`Id`, `t2`.`Id`, `t2`.`Id0`
+2026-05-10 19:19:29.568 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`
+FROM `Pokemons` AS `p`
+LEFT JOIN `PokemonTypes` AS `p0` ON `p`.`Id` = `p0`.`PokemonId`
+WHERE `p`.`Id` IN (98, 41, 71, 53, 56)
+ORDER BY `p`.`Id`
+2026-05-10 19:19:29.576 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+FROM `Moves` AS `m`
+WHERE `m`.`Id` IN (13, 14, 15, 20, 1, 4, 3, 33, 13, 11, 15, 20, 1, 2, 31, 42, 1, 21, 21, 4)
+2026-05-10 19:19:29.577 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.TeamAnalysisResultDto'.
+2026-05-10 19:19:29.578 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend) in 135.8742ms
+2026-05-10 19:19:29.578 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-05-10 19:19:29.578 +02:00 [INF] HTTP POST /api/Team/analyze-saved/3 responded 200 in 147.8499 ms
+2026-05-10 19:19:29.578 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/3 - 0 - 200 - application/json;+charset=utf-8 150.0766ms
+2026-05-10 19:24:02.240 +02:00 [INF] Application is shutting down...
+2026-05-10 19:55:25.517 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-10 19:55:25.555 +02:00 [INF] Now listening on: http://localhost:5033
+2026-05-10 19:55:25.556 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-10 19:55:25.556 +02:00 [INF] Hosting environment: Development
+2026-05-10 19:55:25.556 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/BrunoBebek-PokemonApk/PokeBackend
+2026-05-10 19:55:28.835 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-05-10 19:55:28.888 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 54.2105ms
+2026-05-10 19:55:29.343 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-05-10 19:55:29.393 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.6920ms

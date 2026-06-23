@@ -1,0 +1,785 @@
+2026-06-18 08:28:06.424 +02:00 [INF] User profile is available. Using '/Users/bruno/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-06-18 08:28:06.464 +02:00 [INF] Now listening on: http://localhost:5033
+2026-06-18 08:28:06.465 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-18 08:28:06.465 +02:00 [INF] Hosting environment: Development
+2026-06-18 08:28:06.465 +02:00 [INF] Content root path: /Users/bruno/Desktop/TehnologijeWeba/PokemonApk/PokeBackend
+2026-06-18 08:28:17.446 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team/my-teams - 0
+2026-06-18 08:28:17.446 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Stats - 0
+2026-06-18 08:28:17.446 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke - 0
+2026-06-18 08:28:17.462 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-06-18 08:28:17.462 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.462 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.462 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.464 +02:00 [INF] HTTP OPTIONS /api/Stats responded 204 in 2.3654 ms
+2026-06-18 08:28:17.464 +02:00 [INF] HTTP OPTIONS /api/Team/my-teams responded 204 in 2.3737 ms
+2026-06-18 08:28:17.464 +02:00 [INF] HTTP OPTIONS /api/Poke responded 204 in 2.3620 ms
+2026-06-18 08:28:17.468 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke - 0 - 204 - - 22.9971ms
+2026-06-18 08:28:17.468 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team/my-teams - 0 - 204 - - 22.9980ms
+2026-06-18 08:28:17.468 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Stats - 0 - 204 - - 23.0007ms
+2026-06-18 08:28:17.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Stats - -
+2026-06-18 08:28:17.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Team/my-teams - -
+2026-06-18 08:28:17.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke - -
+2026-06-18 08:28:17.473 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.473 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.473 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:17.501 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetAllPokemon (PokeBackend)'
+2026-06-18 08:28:17.501 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-06-18 08:28:17.501 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend)'
+2026-06-18 08:28:17.508 +02:00 [INF] Route matched with {action = "GetMyTeams", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyTeams() on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:28:17.508 +02:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStats() on controller PokeBackend.Controllers.StatsController (PokeBackend).
+2026-06-18 08:28:17.508 +02:00 [INF] Route matched with {action = "GetAllPokemon", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPokemon(System.String) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:28:17.808 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Teams` AS `t`
+2026-06-18 08:28:17.808 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+FROM `Pokemons` AS `p`
+2026-06-18 08:28:17.817 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Reviews` AS `r`
+2026-06-18 08:28:17.819 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Pokemons` AS `p`
+2026-06-18 08:28:17.820 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Name`, `t`.`CreatedAt`, `t0`.`Id`, `t0`.`PokemonId`, `t0`.`PokemonName`, `t0`.`PokemonImage`, `t0`.`Id0`
+FROM `Teams` AS `t`
+LEFT JOIN (
+    SELECT `t1`.`Id`, `t1`.`PokemonId`, `p`.`Name` AS `PokemonName`, `p`.`ImageUrl` AS `PokemonImage`, `p`.`Id` AS `Id0`, `t1`.`TeamId`
+    FROM `TeamMembers` AS `t1`
+    INNER JOIN `Pokemons` AS `p` ON `t1`.`PokemonId` = `p`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`TeamId`
+WHERE `t`.`UserId` = @__userId_0
+ORDER BY `t`.`CreatedAt` DESC, `t`.`Id`, `t0`.`Id`
+2026-06-18 08:28:17.821 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Moves` AS `m`
+2026-06-18 08:28:17.823 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Items` AS `i`
+2026-06-18 08:28:17.824 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType4`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType5`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:17.824 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-18 08:28:17.831 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[PokeBackend.Models.Pokemon, PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType1`3[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:17.845 +02:00 [INF] Executed action PokeBackend.Controllers.StatsController.GetStats (PokeBackend) in 335.5621ms
+2026-06-18 08:28:17.845 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetAllPokemon (PokeBackend) in 336.4941ms
+2026-06-18 08:28:17.845 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend) in 336.0193ms
+2026-06-18 08:28:17.846 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-06-18 08:28:17.846 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend)'
+2026-06-18 08:28:17.846 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetAllPokemon (PokeBackend)'
+2026-06-18 08:28:17.846 +02:00 [INF] HTTP GET /api/Team/my-teams responded 200 in 372.9909 ms
+2026-06-18 08:28:17.846 +02:00 [INF] HTTP GET /api/Poke responded 200 in 372.9927 ms
+2026-06-18 08:28:17.846 +02:00 [INF] HTTP GET /api/Stats responded 200 in 372.9887 ms
+2026-06-18 08:28:17.848 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Stats - - - 200 - application/json;+charset=utf-8 377.8222ms
+2026-06-18 08:28:17.848 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke - - - 200 - application/json;+charset=utf-8 377.8207ms
+2026-06-18 08:28:17.848 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Team/my-teams - - - 200 - application/json;+charset=utf-8 377.8232ms
+2026-06-18 08:28:52.253 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/1 - 0
+2026-06-18 08:28:52.253 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:52.253 +02:00 [INF] HTTP OPTIONS /api/Poke/1 responded 204 in 0.3258 ms
+2026-06-18 08:28:52.254 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/1 - 0 - 204 - - 1.1877ms
+2026-06-18 08:28:52.255 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/1 - -
+2026-06-18 08:28:52.256 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:52.259 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:52.262 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:28:52.292 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-06-18 08:28:52.306 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:28:52.324 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:28:52.328 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 65.9068ms
+2026-06-18 08:28:52.328 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:52.328 +02:00 [INF] HTTP GET /api/Poke/1 responded 200 in 71.5727 ms
+2026-06-18 08:28:52.328 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/1 - - - 200 - application/json;+charset=utf-8 73.3531ms
+2026-06-18 08:28:52.330 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/1 - 0
+2026-06-18 08:28:52.330 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:52.330 +02:00 [INF] HTTP OPTIONS /api/Review/pokemon/1 responded 204 in 0.0681 ms
+2026-06-18 08:28:52.330 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/1 - 0 - 204 - - 0.2563ms
+2026-06-18 08:28:52.331 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/1 - -
+2026-06-18 08:28:52.331 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:52.331 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:52.333 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-06-18 08:28:52.337 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-06-18 08:28:52.337 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:52.339 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 5.833ms
+2026-06-18 08:28:52.339 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:52.339 +02:00 [INF] HTTP GET /api/Review/pokemon/1 responded 200 in 7.4741 ms
+2026-06-18 08:28:52.339 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/1 - - - 200 - application/json;+charset=utf-8 8.0971ms
+2026-06-18 08:28:57.223 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/2 - 0
+2026-06-18 08:28:57.224 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.225 +02:00 [INF] HTTP OPTIONS /api/Poke/2 responded 204 in 0.3899 ms
+2026-06-18 08:28:57.225 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/2 - 0 - 204 - - 1.5945ms
+2026-06-18 08:28:57.227 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/2 - -
+2026-06-18 08:28:57.228 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.228 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:57.229 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:28:57.241 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:28:57.243 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:28:57.244 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 14.4068ms
+2026-06-18 08:28:57.244 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:57.244 +02:00 [INF] HTTP GET /api/Poke/2 responded 200 in 16.2440 ms
+2026-06-18 08:28:57.244 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/2 - - - 200 - application/json;+charset=utf-8 16.7512ms
+2026-06-18 08:28:57.248 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/2 - 0
+2026-06-18 08:28:57.248 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.248 +02:00 [INF] HTTP OPTIONS /api/Review/pokemon/2 responded 204 in 0.1196 ms
+2026-06-18 08:28:57.248 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/2 - 0 - 204 - - 0.4868ms
+2026-06-18 08:28:57.249 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/2 - -
+2026-06-18 08:28:57.249 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.250 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:57.250 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-06-18 08:28:57.253 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-06-18 08:28:57.254 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:57.254 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 4.1028ms
+2026-06-18 08:28:57.254 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:57.254 +02:00 [INF] HTTP GET /api/Review/pokemon/2 responded 200 in 4.7221 ms
+2026-06-18 08:28:57.254 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/2 - - - 200 - application/json;+charset=utf-8 4.9824ms
+2026-06-18 08:28:57.904 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/3 - 0
+2026-06-18 08:28:57.905 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.905 +02:00 [INF] HTTP OPTIONS /api/Poke/3 responded 204 in 0.1517 ms
+2026-06-18 08:28:57.905 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/3 - 0 - 204 - - 0.8081ms
+2026-06-18 08:28:57.906 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/3 - -
+2026-06-18 08:28:57.907 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.907 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:57.907 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:28:57.911 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:28:57.913 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:28:57.913 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 5.9004ms
+2026-06-18 08:28:57.913 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:57.914 +02:00 [INF] HTTP GET /api/Poke/3 responded 200 in 6.9504 ms
+2026-06-18 08:28:57.914 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/3 - - - 200 - application/json;+charset=utf-8 7.3486ms
+2026-06-18 08:28:57.919 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/3 - 0
+2026-06-18 08:28:57.919 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.919 +02:00 [INF] HTTP OPTIONS /api/Review/pokemon/3 responded 204 in 0.0949 ms
+2026-06-18 08:28:57.919 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/3 - 0 - 204 - - 0.3625ms
+2026-06-18 08:28:57.920 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/3 - -
+2026-06-18 08:28:57.920 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:57.920 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:57.920 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-06-18 08:28:57.922 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-06-18 08:28:57.922 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:57.922 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 1.4947ms
+2026-06-18 08:28:57.922 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:57.922 +02:00 [INF] HTTP GET /api/Review/pokemon/3 responded 200 in 1.8431 ms
+2026-06-18 08:28:57.922 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/3 - - - 200 - application/json;+charset=utf-8 1.9937ms
+2026-06-18 08:28:58.362 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/4 - 0
+2026-06-18 08:28:58.363 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:58.363 +02:00 [INF] HTTP OPTIONS /api/Poke/4 responded 204 in 0.0810 ms
+2026-06-18 08:28:58.363 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/4 - 0 - 204 - - 0.4745ms
+2026-06-18 08:28:58.365 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/4 - -
+2026-06-18 08:28:58.365 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:58.365 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:58.365 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:28:58.370 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:28:58.371 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:28:58.372 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 6.339ms
+2026-06-18 08:28:58.372 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:28:58.372 +02:00 [INF] HTTP GET /api/Poke/4 responded 200 in 6.9183 ms
+2026-06-18 08:28:58.372 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/4 - - - 200 - application/json;+charset=utf-8 7.1569ms
+2026-06-18 08:28:58.376 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/4 - 0
+2026-06-18 08:28:58.376 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:58.376 +02:00 [INF] HTTP OPTIONS /api/Review/pokemon/4 responded 204 in 0.0821 ms
+2026-06-18 08:28:58.376 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Review/pokemon/4 - 0 - 204 - - 0.4159ms
+2026-06-18 08:28:58.377 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/4 - -
+2026-06-18 08:28:58.377 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:28:58.377 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:58.377 +02:00 [INF] Route matched with {action = "GetReviewsForPokemon", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetReviewsForPokemon(Int32) on controller PokeBackend.Controllers.ReviewController (PokeBackend).
+2026-06-18 08:28:58.379 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__pokemonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Comment`, `r`.`Rating`, `r`.`UserId`
+FROM `Reviews` AS `r`
+WHERE `r`.`PokemonId` = @__pokemonId_0
+2026-06-18 08:28:58.379 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:28:58.379 +02:00 [INF] Executed action PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend) in 1.671ms
+2026-06-18 08:28:58.379 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.ReviewController.GetReviewsForPokemon (PokeBackend)'
+2026-06-18 08:28:58.379 +02:00 [INF] HTTP GET /api/Review/pokemon/4 responded 200 in 2.1346 ms
+2026-06-18 08:28:58.379 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Review/pokemon/4 - - - 200 - application/json;+charset=utf-8 2.2986ms
+2026-06-18 08:29:32.415 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/2 - 0
+2026-06-18 08:29:32.416 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:32.417 +02:00 [INF] HTTP OPTIONS /api/Poke/2 responded 204 in 0.5871 ms
+2026-06-18 08:29:32.417 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/2 - 0 - 204 - - 2.8079ms
+2026-06-18 08:29:32.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/2 - -
+2026-06-18 08:29:32.419 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:32.420 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:32.420 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:29:32.430 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:29:32.433 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:29:32.433 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 12.8291ms
+2026-06-18 08:29:32.433 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:32.433 +02:00 [INF] HTTP GET /api/Poke/2 responded 200 in 14.2693 ms
+2026-06-18 08:29:32.434 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/2 - - - 200 - application/json;+charset=utf-8 14.8215ms
+2026-06-18 08:29:38.403 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/6 - 0
+2026-06-18 08:29:38.403 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:38.403 +02:00 [INF] HTTP OPTIONS /api/Poke/6 responded 204 in 0.3278 ms
+2026-06-18 08:29:38.404 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/6 - 0 - 204 - - 1.1242ms
+2026-06-18 08:29:38.406 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/6 - -
+2026-06-18 08:29:38.407 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:38.407 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:38.407 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:29:38.418 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:29:38.420 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:29:38.421 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 13.2779ms
+2026-06-18 08:29:38.421 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:38.421 +02:00 [INF] HTTP GET /api/Poke/6 responded 200 in 14.5079 ms
+2026-06-18 08:29:38.421 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/6 - - - 200 - application/json;+charset=utf-8 15.0178ms
+2026-06-18 08:29:41.639 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/4 - 0
+2026-06-18 08:29:41.640 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:41.640 +02:00 [INF] HTTP OPTIONS /api/Poke/4 responded 204 in 0.3235 ms
+2026-06-18 08:29:41.640 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/4 - 0 - 204 - - 1.2712ms
+2026-06-18 08:29:41.642 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/4 - -
+2026-06-18 08:29:41.643 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:41.643 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:41.643 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:29:41.652 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:29:41.654 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:29:41.654 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 10.7648ms
+2026-06-18 08:29:41.654 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:41.654 +02:00 [INF] HTTP GET /api/Poke/4 responded 200 in 11.8003 ms
+2026-06-18 08:29:41.655 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/4 - - - 200 - application/json;+charset=utf-8 12.2777ms
+2026-06-18 08:29:46.560 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/38 - 0
+2026-06-18 08:29:46.561 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:46.561 +02:00 [INF] HTTP OPTIONS /api/Poke/38 responded 204 in 0.2984 ms
+2026-06-18 08:29:46.561 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/38 - 0 - 204 - - 1.2398ms
+2026-06-18 08:29:46.564 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/38 - -
+2026-06-18 08:29:46.565 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:46.565 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:46.566 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:29:46.574 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:29:46.576 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:29:46.576 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 10.6917ms
+2026-06-18 08:29:46.577 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:46.577 +02:00 [INF] HTTP GET /api/Poke/38 responded 200 in 12.0427 ms
+2026-06-18 08:29:46.577 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/38 - - - 200 - application/json;+charset=utf-8 12.4651ms
+2026-06-18 08:29:50.545 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/8 - 0
+2026-06-18 08:29:50.545 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:50.546 +02:00 [INF] HTTP OPTIONS /api/Poke/8 responded 204 in 0.3299 ms
+2026-06-18 08:29:50.546 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/8 - 0 - 204 - - 1.1757ms
+2026-06-18 08:29:50.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/8 - -
+2026-06-18 08:29:50.549 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:29:50.550 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:50.550 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:29:50.559 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:29:50.561 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:29:50.561 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 10.9039ms
+2026-06-18 08:29:50.561 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:29:50.561 +02:00 [INF] HTTP GET /api/Poke/8 responded 200 in 12.0982 ms
+2026-06-18 08:29:50.561 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/8 - - - 200 - application/json;+charset=utf-8 12.5241ms
+2026-06-18 08:30:30.470 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/10 - 0
+2026-06-18 08:30:30.471 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:30.471 +02:00 [INF] HTTP OPTIONS /api/Poke/10 responded 204 in 0.1426 ms
+2026-06-18 08:30:30.471 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Poke/10 - 0 - 204 - - 0.7960ms
+2026-06-18 08:30:30.472 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Poke/10 - -
+2026-06-18 08:30:30.473 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:30.473 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:30:30.473 +02:00 [INF] Route matched with {action = "GetPokemonDetails", controller = "Poke"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PokeBackend.DTOs.PokemonDetailsDto]] GetPokemonDetails(Int32) on controller PokeBackend.Controllers.PokeController (PokeBackend).
+2026-06-18 08:30:30.477 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Attack`, `t`.`CryUrl`, `t`.`Defense`, `t`.`Description`, `t`.`HP`, `t`.`ImageUrl`, `t`.`Name`, `t`.`SpAttack`, `t`.`SpDefense`, `t`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`, `t0`.`Id`, `t0`.`MoveId`, `t0`.`PokemonId`, `t0`.`Id0`, `t0`.`Accuracy`, `t0`.`Name`, `t0`.`PP`, `t0`.`Power`, `t0`.`TypeName`
+FROM (
+    SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`
+    FROM `Pokemons` AS `p`
+    WHERE `p`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `PokemonTypes` AS `p0` ON `t`.`Id` = `p0`.`PokemonId`
+LEFT JOIN (
+    SELECT `p1`.`Id`, `p1`.`MoveId`, `p1`.`PokemonId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+    FROM `PokemonMoves` AS `p1`
+    INNER JOIN `Moves` AS `m` ON `p1`.`MoveId` = `m`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`PokemonId`
+ORDER BY `t`.`Id`, `p0`.`Id`, `t0`.`Id`
+2026-06-18 08:30:30.478 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.PokemonDetailsDto'.
+2026-06-18 08:30:30.478 +02:00 [INF] Executed action PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend) in 4.7737ms
+2026-06-18 08:30:30.478 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.PokeController.GetPokemonDetails (PokeBackend)'
+2026-06-18 08:30:30.478 +02:00 [INF] HTTP GET /api/Poke/10 responded 200 in 5.6242 ms
+2026-06-18 08:30:30.478 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Poke/10 - - - 200 - application/json;+charset=utf-8 5.8502ms
+2026-06-18 08:30:46.841 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze - 0
+2026-06-18 08:30:46.841 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:46.842 +02:00 [INF] HTTP OPTIONS /api/Team/analyze responded 204 in 0.7625 ms
+2026-06-18 08:30:46.842 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze - 0 - 204 - - 1.7604ms
+2026-06-18 08:30:46.844 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Team/analyze application/json 278
+2026-06-18 08:30:46.845 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:46.846 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.AnalyzeMyTeam (PokeBackend)'
+2026-06-18 08:30:46.850 +02:00 [INF] Route matched with {action = "AnalyzeMyTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeMyTeam(PokeBackend.DTOs.TeamRequestDto) on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:30:46.888 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`
+FROM `Pokemons` AS `p`
+LEFT JOIN `PokemonTypes` AS `p0` ON `p`.`Id` = `p0`.`PokemonId`
+WHERE `p`.`Id` IN (38, 2, 4, 8, 6, 10)
+ORDER BY `p`.`Id`
+2026-06-18 08:30:46.890 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+FROM `Moves` AS `m`
+WHERE `m`.`Id` IN (15, 3, 3, 5, 15, 1, 10, 15, 2, 5, 100, 16, 1, 10, 16, 17, 16, 99, 9, 99, 16, 16, 2, 99)
+2026-06-18 08:30:46.892 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.TeamAnalysisResultDto'.
+2026-06-18 08:30:46.893 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.AnalyzeMyTeam (PokeBackend) in 42.8407ms
+2026-06-18 08:30:46.893 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.AnalyzeMyTeam (PokeBackend)'
+2026-06-18 08:30:46.893 +02:00 [INF] HTTP POST /api/Team/analyze responded 200 in 48.1823 ms
+2026-06-18 08:30:46.893 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Team/analyze application/json 278 - 200 - application/json;+charset=utf-8 48.5622ms
+2026-06-18 08:30:52.092 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team - 0
+2026-06-18 08:30:52.092 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:52.092 +02:00 [INF] HTTP OPTIONS /api/Team responded 204 in 0.1490 ms
+2026-06-18 08:30:52.092 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team - 0 - 204 - - 0.5882ms
+2026-06-18 08:30:52.094 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Team application/json 262
+2026-06-18 08:30:52.094 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:52.095 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.CreateTeam (PokeBackend)'
+2026-06-18 08:30:52.100 +02:00 [INF] Route matched with {action = "CreateTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTeam(PokeBackend.DTOs.TeamRequestDto) on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:30:52.151 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Teams` (`CreatedAt`, `Name`, `UserId`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Teams`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.166 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.170 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.173 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.175 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.176 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.176 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMembers` (`PokemonId`, `TeamId`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `TeamMembers`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.177 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `TeamMemberMoves` (`MoveId`, `TeamMemberId`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `TeamMemberMoves`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-06-18 08:30:52.178 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-18 08:30:52.178 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.CreateTeam (PokeBackend) in 78.6209ms
+2026-06-18 08:30:52.178 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.CreateTeam (PokeBackend)'
+2026-06-18 08:30:52.178 +02:00 [INF] HTTP POST /api/Team responded 200 in 84.7414 ms
+2026-06-18 08:30:52.179 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Team application/json 262 - 200 - application/json;+charset=utf-8 84.9434ms
+2026-06-18 08:30:53.665 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team/my-teams - 0
+2026-06-18 08:30:53.665 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:53.666 +02:00 [INF] HTTP OPTIONS /api/Team/my-teams responded 204 in 0.2095 ms
+2026-06-18 08:30:53.666 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team/my-teams - 0 - 204 - - 0.8810ms
+2026-06-18 08:30:53.667 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Stats - 0
+2026-06-18 08:30:53.668 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:53.668 +02:00 [INF] HTTP OPTIONS /api/Stats responded 204 in 0.1135 ms
+2026-06-18 08:30:53.668 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Stats - 0 - 204 - - 0.5390ms
+2026-06-18 08:30:53.668 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Team/my-teams - -
+2026-06-18 08:30:53.669 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:53.670 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/api/Stats - -
+2026-06-18 08:30:53.670 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:53.670 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-06-18 08:30:53.670 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend)'
+2026-06-18 08:30:53.671 +02:00 [INF] Route matched with {action = "GetMyTeams", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyTeams() on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:30:53.671 +02:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStats() on controller PokeBackend.Controllers.StatsController (PokeBackend).
+2026-06-18 08:30:53.674 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Teams` AS `t`
+2026-06-18 08:30:53.675 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Reviews` AS `r`
+2026-06-18 08:30:53.676 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Pokemons` AS `p`
+2026-06-18 08:30:53.677 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Moves` AS `m`
+2026-06-18 08:30:53.678 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Name`, `t`.`CreatedAt`, `t0`.`Id`, `t0`.`PokemonId`, `t0`.`PokemonName`, `t0`.`PokemonImage`, `t0`.`Id0`
+FROM `Teams` AS `t`
+LEFT JOIN (
+    SELECT `t1`.`Id`, `t1`.`PokemonId`, `p`.`Name` AS `PokemonName`, `p`.`ImageUrl` AS `PokemonImage`, `p`.`Id` AS `Id0`, `t1`.`TeamId`
+    FROM `TeamMembers` AS `t1`
+    INNER JOIN `Pokemons` AS `p` ON `t1`.`PokemonId` = `p`.`Id`
+) AS `t0` ON `t`.`Id` = `t0`.`TeamId`
+WHERE `t`.`UserId` = @__userId_0
+ORDER BY `t`.`CreatedAt` DESC, `t`.`Id`, `t0`.`Id`
+2026-06-18 08:30:53.678 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Items` AS `i`
+2026-06-18 08:30:53.678 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-18 08:30:53.678 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType4`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType5`4[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PokeBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-18 08:30:53.679 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend) in 7.7812ms
+2026-06-18 08:30:53.679 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.GetMyTeams (PokeBackend)'
+2026-06-18 08:30:53.679 +02:00 [INF] HTTP GET /api/Team/my-teams responded 200 in 10.2662 ms
+2026-06-18 08:30:53.679 +02:00 [INF] Executed action PokeBackend.Controllers.StatsController.GetStats (PokeBackend) in 7.7605ms
+2026-06-18 08:30:53.679 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Team/my-teams - - - 200 - application/json;+charset=utf-8 10.6061ms
+2026-06-18 08:30:53.679 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.StatsController.GetStats (PokeBackend)'
+2026-06-18 08:30:53.679 +02:00 [INF] HTTP GET /api/Stats responded 200 in 9.2600 ms
+2026-06-18 08:30:53.680 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/api/Stats - - - 200 - application/json;+charset=utf-8 9.5510ms
+2026-06-18 08:30:56.901 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze-saved/6 - 0
+2026-06-18 08:30:56.901 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:56.902 +02:00 [INF] HTTP OPTIONS /api/Team/analyze-saved/6 responded 204 in 0.2068 ms
+2026-06-18 08:30:56.902 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze-saved/6 - 0 - 204 - - 0.8839ms
+2026-06-18 08:30:56.904 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/6 - 0
+2026-06-18 08:30:56.904 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:56.905 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-06-18 08:30:56.910 +02:00 [INF] Route matched with {action = "AnalyzeSavedTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeSavedTeam(Int32) on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:30:56.924 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-06-18 08:30:56.929 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__teamId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`CreatedAt`, `t0`.`Name`, `t0`.`UserId`, `t2`.`Id`, `t2`.`PokemonId`, `t2`.`TeamId`, `t2`.`Id0`, `t2`.`MoveId`, `t2`.`TeamMemberId`, `t2`.`Id00`, `t2`.`Accuracy`, `t2`.`Name`, `t2`.`PP`, `t2`.`Power`, `t2`.`TypeName`
+FROM (
+    SELECT `t`.`Id`, `t`.`CreatedAt`, `t`.`Name`, `t`.`UserId`
+    FROM `Teams` AS `t`
+    WHERE (`t`.`Id` = @__teamId_0) AND (`t`.`UserId` = @__userId_1)
+    LIMIT 1
+) AS `t0`
+LEFT JOIN (
+    SELECT `t1`.`Id`, `t1`.`PokemonId`, `t1`.`TeamId`, `t3`.`Id` AS `Id0`, `t3`.`MoveId`, `t3`.`TeamMemberId`, `t3`.`Id0` AS `Id00`, `t3`.`Accuracy`, `t3`.`Name`, `t3`.`PP`, `t3`.`Power`, `t3`.`TypeName`
+    FROM `TeamMembers` AS `t1`
+    LEFT JOIN (
+        SELECT `t4`.`Id`, `t4`.`MoveId`, `t4`.`TeamMemberId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+        FROM `TeamMemberMoves` AS `t4`
+        INNER JOIN `Moves` AS `m` ON `t4`.`MoveId` = `m`.`Id`
+    ) AS `t3` ON `t1`.`Id` = `t3`.`TeamMemberId`
+) AS `t2` ON `t0`.`Id` = `t2`.`TeamId`
+ORDER BY `t0`.`Id`, `t2`.`Id`, `t2`.`Id0`
+2026-06-18 08:30:56.931 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`
+FROM `Pokemons` AS `p`
+LEFT JOIN `PokemonTypes` AS `p0` ON `p`.`Id` = `p0`.`PokemonId`
+WHERE `p`.`Id` IN (150, 249, 248, 282, 324, 357)
+ORDER BY `p`.`Id`
+2026-06-18 08:30:56.932 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+FROM `Moves` AS `m`
+WHERE `m`.`Id` IN (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+2026-06-18 08:30:56.932 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.TeamAnalysisResultDto'.
+2026-06-18 08:30:56.932 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend) in 22.2167ms
+2026-06-18 08:30:56.932 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-06-18 08:30:56.933 +02:00 [INF] HTTP POST /api/Team/analyze-saved/6 responded 200 in 28.4070 ms
+2026-06-18 08:30:56.933 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/6 - 0 - 200 - application/json;+charset=utf-8 28.7425ms
+2026-06-18 08:30:58.147 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze-saved/8 - 0
+2026-06-18 08:30:58.147 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:58.147 +02:00 [INF] HTTP OPTIONS /api/Team/analyze-saved/8 responded 204 in 0.2067 ms
+2026-06-18 08:30:58.148 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5033/api/Team/analyze-saved/8 - 0 - 204 - - 0.9890ms
+2026-06-18 08:30:58.150 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/8 - 0
+2026-06-18 08:30:58.150 +02:00 [INF] CORS policy execution successful.
+2026-06-18 08:30:58.151 +02:00 [INF] Executing endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-06-18 08:30:58.151 +02:00 [INF] Route matched with {action = "AnalyzeSavedTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeSavedTeam(Int32) on controller PokeBackend.Controllers.TeamController (PokeBackend).
+2026-06-18 08:30:58.163 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__teamId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`CreatedAt`, `t0`.`Name`, `t0`.`UserId`, `t2`.`Id`, `t2`.`PokemonId`, `t2`.`TeamId`, `t2`.`Id0`, `t2`.`MoveId`, `t2`.`TeamMemberId`, `t2`.`Id00`, `t2`.`Accuracy`, `t2`.`Name`, `t2`.`PP`, `t2`.`Power`, `t2`.`TypeName`
+FROM (
+    SELECT `t`.`Id`, `t`.`CreatedAt`, `t`.`Name`, `t`.`UserId`
+    FROM `Teams` AS `t`
+    WHERE (`t`.`Id` = @__teamId_0) AND (`t`.`UserId` = @__userId_1)
+    LIMIT 1
+) AS `t0`
+LEFT JOIN (
+    SELECT `t1`.`Id`, `t1`.`PokemonId`, `t1`.`TeamId`, `t3`.`Id` AS `Id0`, `t3`.`MoveId`, `t3`.`TeamMemberId`, `t3`.`Id0` AS `Id00`, `t3`.`Accuracy`, `t3`.`Name`, `t3`.`PP`, `t3`.`Power`, `t3`.`TypeName`
+    FROM `TeamMembers` AS `t1`
+    LEFT JOIN (
+        SELECT `t4`.`Id`, `t4`.`MoveId`, `t4`.`TeamMemberId`, `m`.`Id` AS `Id0`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+        FROM `TeamMemberMoves` AS `t4`
+        INNER JOIN `Moves` AS `m` ON `t4`.`MoveId` = `m`.`Id`
+    ) AS `t3` ON `t1`.`Id` = `t3`.`TeamMemberId`
+) AS `t2` ON `t0`.`Id` = `t2`.`TeamId`
+ORDER BY `t0`.`Id`, `t2`.`Id`, `t2`.`Id0`
+2026-06-18 08:30:58.167 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Attack`, `p`.`CryUrl`, `p`.`Defense`, `p`.`Description`, `p`.`HP`, `p`.`ImageUrl`, `p`.`Name`, `p`.`SpAttack`, `p`.`SpDefense`, `p`.`Speed`, `p0`.`Id`, `p0`.`PokemonId`, `p0`.`TypeName`
+FROM `Pokemons` AS `p`
+LEFT JOIN `PokemonTypes` AS `p0` ON `p`.`Id` = `p0`.`PokemonId`
+WHERE `p`.`Id` IN (38, 2, 4, 8, 6, 10)
+ORDER BY `p`.`Id`
+2026-06-18 08:30:58.168 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Accuracy`, `m`.`Name`, `m`.`PP`, `m`.`Power`, `m`.`TypeName`
+FROM `Moves` AS `m`
+WHERE `m`.`Id` IN (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+2026-06-18 08:30:58.169 +02:00 [INF] Executing OkObjectResult, writing value of type 'PokeBackend.DTOs.TeamAnalysisResultDto'.
+2026-06-18 08:30:58.170 +02:00 [INF] Executed action PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend) in 18.5615ms
+2026-06-18 08:30:58.170 +02:00 [INF] Executed endpoint 'PokeBackend.Controllers.TeamController.AnalyzeSavedTeam (PokeBackend)'
+2026-06-18 08:30:58.170 +02:00 [INF] HTTP POST /api/Team/analyze-saved/8 responded 200 in 19.9812 ms
+2026-06-18 08:30:58.170 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5033/api/Team/analyze-saved/8 - 0 - 200 - application/json;+charset=utf-8 20.4207ms
+2026-06-18 08:31:17.930 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/index.html - -
+2026-06-18 08:31:17.946 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/index.html - - - 200 - text/html;charset=utf-8 16.4532ms
+2026-06-18 08:31:18.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - -
+2026-06-18 08:31:18.324 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - -
+2026-06-18 08:31:18.328 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-18 08:31:18.328 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/favicon-32x32.png - - - 200 628 image/png 4.0202ms
+2026-06-18 08:31:18.349 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5033/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 27.8050ms
